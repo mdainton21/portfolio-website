@@ -1,0 +1,361 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
+/*
+Colors used
+
+Text Color (Dark Gray): #2b2b2b;
+Hyperlink Color (Green): #357b70;
+Visited Hyperlink Color (Grey): #043c41;
+Selected link Color (Lime Green): #489c79;
+Button Color (Green): #357b70
+Button Font Color: white
+Secondary Button Color (Orange): #e0b354;
+Secondary Button Font Color (Dark Grey): #2b2b2b;
+ */
+
+ * {
+    /* Makes set dimensions include padding/border/etc.*/
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.page-header {
+    /* Flexbox set-up for header */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3)
+}
+
+.page-header_item {
+    /* Flexbox Ratio */
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+}
+
+.page-header_item:last-child {
+    /* Right aligning Header links */
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+}
+
+.navigation-list {
+    /* Removing bullet points from list */
+    list-style-type: none;
+}
+
+.navigation-list li {
+    /* Setting links into block format */
+    display: inline-block;
+    margin-left: 15px;
+}
+
+body {
+    /* FONTS */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+a {
+    /* Hyperlink color */
+    color: #357b70;
+}
+
+a:visited {
+    /* visited link */
+    color: #043c41
+}
+
+a:hover,
+a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+}
+
+a:active {
+    /* selected link */
+    color: #489c79;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.profile_portrait {
+    /* profile picture spacing/formatting */
+    float: left;
+    width: 250px;
+    height: auto;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* background color, font color, and text decoration (underline, etc.) */
+    background-color: #357b70;
+    color: #FFFFFF;
+    text-decoration: none;
+    /*Button Spacing */
+    padding: 10px;
+    border-radius: 3px;
+    /* Border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover,
+button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* sets the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.cv-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 3px rgba(0, 0, 0, 0.3);
+}
+
+.button_secondary {
+    /* secondary button stylings */
+    background-color: #e0b354;
+    color: #2b2b2b;
+    width: 200px;
+}
+
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: #357b70;
+    color: #FFFFFF;
+    /* Causing issues? */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition-duration: opacity 0.2s;
+            transition-duration: opacity 0.2s;
+}
+
+button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: #357b70;
+    color: #FFFFFF;
+    /* Causing issues? */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    -webkit-transition-duration: opacity 0.2s;
+            transition-duration: opacity 0.2s;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+}
+
+.grid_item {
+    /* Grid fallback */
+    display: inline-block;
+    width: 33%;
+}
+
+
+@supports (display: grid) {
+
+    /* CSS Grid Formatting */
+    .work-projects {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        margin: 0;
+    }
+
+    .grid_item {
+        background-color: #d3d3d3;
+        width: auto;
+        min-height: auto;
+        margin: 0;
+    }
+}
+
+.page-footer {
+    /*footer stylings*/
+    /*Pushing footer below profile pic */
+    clear: both;
+    text-align: center;
+    /*Flexbox formatting*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+@media all and (max-width: 750px) {
+    @media all and (max-width: 500px) {
+        .work-projects {
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media all and (min-width: 501px) and (max-width: 750px) {
+        .work-projects {
+            -ms-grid-columns: 1fr 20px 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media all and (max-width: 750px) {
+        .work-projects {
+            grid-gap: 10px
+        }
+    }
+
+    .grid_item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+.pitt-skyline {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+}
+
+/* Animation to move clouds across screen */
+@-webkit-keyframes cloud-move {
+    from {
+        -webkit-transform: translate(-100px, 50px);
+                transform: translate(-100px, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(1200px, 50px);
+                transform: translate(1200px, 50px);
+    }
+}
+@keyframes cloud-move {
+    from {
+        -webkit-transform: translate(-100px, 50px);
+                transform: translate(-100px, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(1200px, 50px);
+                transform: translate(1200px, 50px);
+    }
+}
+
+@-webkit-keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(500px, 50px);
+                transform: translate(500px, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(-2400px, 50px);
+                transform: translate(-2400px, 50px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        -webkit-transform: translate(500px, 50px);
+                transform: translate(500px, 50px);
+    }
+
+    to {
+        -webkit-transform: translate(-2400px, 50px);
+                transform: translate(-2400px, 50px);
+    }
+}
+
+
+/* Picking the specific clouds to use */
+.cloud-front {
+    -webkit-animation: 20s cloud-move infinite alternate linear;
+            animation: 20s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+    -webkit-animation: 25s cloud-move-reverse infinite alternate linear;
+            animation: 25s cloud-move-reverse infinite alternate linear;
+}
