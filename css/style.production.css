@@ -269,9 +269,6 @@ button:focus,
             -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
         }
-        .profile_portrait {
-            margin-right: 40%;
-        }
     }
 
     @media all and (min-width: 501px) and (max-width: 750px) {
