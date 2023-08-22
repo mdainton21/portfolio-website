@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Allows use of viewport-->
     <title>Matt Dainton - Portfolio</title>
-    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" >
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -37,22 +37,25 @@
     </header>
     <main>
         <div class="profile">
-            <img src="./img/profile-img.jpg" width="250" height="250" class="profile_portrait" alt="A photograph of me">
-            <h1>Hello World</h1>
-            <p>My name is Matt Dainton. I am a <span>web</span> developer from Pittsburgh</p>
-            <button type="button">Check out some of my code</button>
+            <div class="profile-item">
+                <img src="./img/profile-img.jpg" width="250" height="250" class="profile_portrait"
+                    alt="A photograph of me">
+            </div>
+            <div class="profile-item">
+                <h1>Hello World</h1>
+                <p>My name is Matt Dainton. I am a <span>web</span> developer from Pittsburgh</p>
+                <form action="work.html">
+                    <button type="submit">Check out some of my code</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer class="page-footer">
-        <div class="trial-stuff">
-            <a href="#">Default Link</a>
-            <br>
-            <button class="button_secondary">Secondary Button</button>
-        </div>
         <p>Find me on:</p>
         <div class="social-media">
-            <img src="./img/github_lg.svg" width= "30" height="30" alt="Github">
-            <img src="./img/twitter_lg.svg" width="30" height="30" alt="Twitter">
+            <a href="https://github.com/mdainton21">
+                <img src="./img/github_lg.svg" width="30" height="30" alt="Github Logo">
+            </a>
             <img src="./img/linkedin_lg.svg" width="30" height="30" alt="LinkedIn">
         </div>
     </footer>
