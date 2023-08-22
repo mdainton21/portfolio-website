@@ -16,7 +16,7 @@ Secondary Button Font Color (Dark Grey): #2b2b2b;
     --text-color: #2b2b2b;
     --button-text-color: #FFFFFF;
     --select-link-color: #489c79;
-    --used-link-color: #043c41;
+    --used-link-color: #7b8d8f;
     --border-color: rgba(0, 0, 0, 0.3);
     --border-bottom: 2px solid rgba(0, 0, 0, 0.3);
     --grid-item-color: #d3d3d3;
@@ -89,6 +89,10 @@ a {
     color: var(--primary-color);
 }
 
+.a-alt {
+    color: var(--button-text-color)
+}
+
 a:visited {
     /* visited link */
     color: var(--used-link-color)
@@ -112,10 +116,9 @@ a:active {
 
 .profile_portrait {
     /* profile picture spacing/formatting */
-    float: left;
     width: 250px;
     height: auto;
-    margin-right: 40px;
+    margin-right: 20px;
     border-radius: 50%;
 }
 
@@ -157,6 +160,7 @@ button:focus {
     justify-content: center;
     align-items: center;
     border: 3px var(--border-color);
+    margin-bottom: 50px;
 }
 
 .button_secondary {
@@ -195,6 +199,10 @@ button:focus,
     opacity: 0.8;
 }
 
+.work {
+    text-align: center;
+}
+
 .grid_item {
     /* Grid fallback */
     display: inline-block;
@@ -210,6 +218,7 @@ button:focus,
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 20px;
         margin: 0;
+
     }
 
     .grid_item {
@@ -217,8 +226,57 @@ button:focus,
         width: auto;
         min-height: auto;
         margin: 0;
+        padding: 15px;
     }
+
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0px;
+        margin: auto;
+
+    }
+
+    .profile-item {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 5px;
+        justify-content: center;
+    }
+    .profile-item:first-child {
+        margin-left: auto;
+    }
+
 }
+
+.contact {
+    text-align: center;
+}
+
+.contact-blurb {
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    border-radius: 3px;
+    max-width: 360px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    padding: 5px;
+}
+
 
 .page-footer {
     /*footer stylings*/
@@ -235,8 +293,14 @@ button:focus,
         .work-projects {
             grid-template-columns: 1fr;
         }
-        .profile_portrait {
-            margin-right: 40%;
+
+        .profile {
+            grid-template-columns: 1fr;
+        }
+        .profile-item {
+            text-align: center;
+            margin: auto;
+            max-width: 300px;
         }
     }
 
