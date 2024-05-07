@@ -244,6 +244,7 @@ button:focus,
         padding: 5px;
         justify-content: center;
     }
+
     .profile-item:first-child {
         margin-left: auto;
     }
@@ -297,6 +298,7 @@ input {
         .profile {
             grid-template-columns: 1fr;
         }
+
         .profile-item {
             text-align: center;
             margin: auto;
