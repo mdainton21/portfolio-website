@@ -110,14 +110,15 @@ a:active {
 }
 
 .profile {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .profile_portrait {
     /* profile picture spacing/formatting */
-    width: 250px;
+    width: 300px;
     height: auto;
+    margin-top: 100px;
     margin-right: 20px;
     border-radius: 50%;
 }
@@ -243,6 +244,7 @@ button:focus,
         margin: 0;
         padding: 5px;
         justify-content: center;
+        align-items: center;
     }
 
     .profile-item:first-child {

@@ -117,8 +117,9 @@ a:active {
 
 .profile_portrait {
     /* profile picture spacing/formatting */
-    width: 250px;
+    width: 350px;
     height: auto;
+    margin-top: 30%;
     margin-right: 20px;
     border-radius: 50%;
 }
@@ -143,6 +144,7 @@ button {
     text-decoration: none;
     /*Button Spacing */
     padding: 10px;
+    margin: 5px;
     border-radius: 3px;
     /* Border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
