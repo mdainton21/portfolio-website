@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"> <!--The character set for the page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Allows use of viewport-->
+    <title>Matt Dainton - Portfolio</title>
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+
+<body>
+    <header class="page-header">
+        <img src="./img/headlogo.png" width="200" height="70"
+            alt="Logo for Matt Dainton featuring my name stylized with a computer mouse">
+        <nav class="main-navigation page-header_item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem"
+                        class="navigation-list_item navigation-list_item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list_item">About me</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list_item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="case-main">
+            <div class="center-case-study">
+                <br />
+                <h1>Case Study for MyChatApp</h1>
+                <br />
+            </div>
+            <div class="case-study">
+                <div class="case-study-grid">
+                    <h2>Purpose and Context</h2>
+                    <p>The MyChatApp is a mobile application
+                        designed as part of the CareerFoundry
+                        development course. The App was built using
+                        React Native and Expo as practice designing an
+                        App on mobile. It allows the user to enter a chat
+                        interface and send messages, photos, or even
+                        their location.
+                    </p>
+                </div>
+                <div class="case-study-grid">
+                    <img src="./img/ChatAppCS/Home1.gif" height="450" alt="Picture of home page of app on a phone">
+                </div>
+            </div>
+            <div class="center-case-study">
+                <br />
+                <h2>Objective</h2>
+                <ul class="case-list">
+                    <li> Create a mobile app capable of sending
+                        messages from one phone to another.</li>
+                    <br />
+                    <li>The app will be linked to online data
+                        storage to compile all messages sent.</li>
+                    <br />
+                    <li>The app will also store messages on the
+                        client side, so a user can check previous
+                        messages even while offline.</li>
+                    <br />
+                    <li>The User should be able to choose their
+                        own chat name and background color.</li>
+                    <br />
+                    <li>The User should be able to send images,
+                        as well as their current location.</li>
+                </ul>
+                <br />
+                <br />
+            </div>
+            <div class="case-study">
+                <div class="case-study-grid">
+                    <br />
+                    <h2>Technologies Used</h2>
+                    <p>The objective was to create a mobile app from
+                        the ground up, so several different technologies
+                        were needed to put it all together. Google
+                        Firestore was chosen as the way to store all of
+                        our message data with React Native forming the
+                        backbone of the app. Expo was the main testing
+                        program, with Android Studio being used as our
+                        final test.
+                    </p>
+                </div>
+                <div class="case-study-grid">
+                    <img src="./img/ChatAppCS/react-native_large.png" height="150" alt="React Native Logo">
+                    <br />
+                    <img src="./img/ChatAppCS/Firestore_lg.png" height="125" alt="Google Firstore Logo">
+                    <img src="./img/ChatAppCS/expo-go_lg.png" height="125" alt="Expo Go Logo">
+
+                </div>
+            </div>
+            <div class="center-case-study">
+                <br />
+                <h2>Project Timeline</h2>
+                <img src="./img/ChatAppCS/timeline.jpg" height="449" alt="Timeline of the projects development">
+            </div>
+            <div class="case-study">
+                <div class="case-study-grid">
+                    <br />
+                    <h2>Forming the App</h2>
+                    <p> The first step was to create the
+                        skeleton of the app.
+                        After setting up the React Native
+                        environment a Start screen and a Chat
+                        screen were made using Expo.
+                        Added to the start screen was the
+                        ability to choose your name and
+                        background color.
+                        Navigation was added so the user can
+                        go from the start screen to the chat
+                        screen.
+                    </p>
+                </div>
+                <div class="case-study-grid">
+                    <br />
+                    <img src="./img/ChatAppCS/StartCode.png" width="550" alt="Picture of code for app">
+                </div>
+                <div class="case-study-grid">
+                    <img src="./img/ChatAppCS/Home2.gif" height="450" alt="animated gif of chat screen">
+                </div>
+                <div class="case-study-grid">
+                    <h2>Creating the Chat Interface</h2>
+                    <p> The next step was creating the chat interface itself.
+                        Using Gifted Chat (A library for React Native) the UI for
+                        the chat screen was set, as well as the ability to open
+                        the keyboard and send a message.
+                        After some trial and error, the keyboard was fixed so it
+                        would never unintentionally cover any messages.
+                    </p>
+                </div>
+                <div class="case-study-grid">
+                    <h2>User Authentication & Data Storage</h2>
+                    <p> A Firestore database was created to
+                        store messages from the app.
+                        The database was linked to the start
+                        screen, authenticating a user
+                        anonymously when they enter the
+                        chat screen.
+                        The chat screen was set to fetch any
+                        previous messages from the
+                        database, and when a user sent a
+                        message it would then be added to
+                        the database.
+                    </p>
+                </div>
+                <div class="case-study-grid">
+                    <br />
+                    <img src="./img/ChatAppCS/Firestore1.png" width="550" alt="Picture of firestore database">
+                </div>
+            </div>
+            <div class="case-study">
+                <div class="case-study-grid">
+                    <br />
+                    <h2>Client Side Storage</h2>
+                    <p> The next step was allowing the user to access old messages
+                        even when offline.
+                        The app was made to check if it had a connection to the
+                        database whenever the chat was opened.
+                    <ul>
+                        <li>If a connection was present the app would pull data
+                            from the database and work as normal.</li>
+                        <li> If a connection was not present, the app would alert
+                            the user that the connection was down and load
+                            messages from a cache stored on the device</li>
+                    </ul>
+                    This cache function needed to be added, and the app will
+                    periodically save messages into the cache.
+                    </p>
+                </div>
+                <div class="case-study-grid">
+                    <br />
+                    <img src="./img/ChatAppCS/wifi.png" width="250" alt="wifi logo">
+                </div>
+                <div class="case-study-grid">
+                    <img src="./img/ChatAppCS/image.png" width="200" alt="blank img logo">
+                    <br />
+                    <img src="./img/ChatAppCS/map.png" width="200" alt="google map example">
+                </div>
+                <div class="case-study-grid">
+                    <h2>Advanced Chat Functions</h2>
+                    <p>The final step was adding more advanced chat functions to
+                        the app
+                        A function to send an image was added, and the user can
+                        decide whether to send an image from storage or to take a
+                        picture. The database was updated so that images can be
+                        sent, and are stored in a separate category.
+                        Another function was added that allows the user to share
+                        their location. A function was set up to find the users
+                        location, and that location is then converted to a map image
+                        using React Native props.</p>
+                </div>
+            </div>
+            <div class="center-case-study">
+                <br />
+                <h2>Retrospective</h2>
+                <ul class="case-list">
+                    <li>
+                        <b>What went well?</b>
+                        <br />
+                        I learned a lot about mobile apps, and how they can vary
+                        quite a lot from ones designed for other devices. I also had
+                        a lot of fun using different software to test out my builds.
+                    </li>
+                    <br />
+                    <li>
+                        <b>What didn't go so well?</b>
+                        <br />
+                        The map function was extremely finicky and I struggled
+                        a lot in testing to get it to work the way I desired. By the
+                        end I got it to work properly, but I think if I had a better
+                        handle on the function itself I could have avoided those
+                        struggles.
+                    </li>
+                    <br />
+                    <li>
+                        <b>What would I do differently?</b>
+                        <br />
+                        I would add more chat functions! I already implemented
+                        a camera, so I think it would have been cool to add a way
+                        to send videos. Another small change I would add is
+                        more colors to choose as a background.
+                    </li>
+                    <br />
+                    <li>
+                        <b>Final Thoughts</b>
+                        <br />
+                        I am really happy with how this project turned out and
+                        will definitely work more with React in the future. It
+                        was a good learning experience for my coding, but
+                        also for my testing on different platforms.
+                    </li>
+                    <br />
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <p>Connect with me:</p>
+        <div class="social-media">
+            <a href="mailto:mdainton21@gmail.com?subject=Web Development Contact" target="_self">
+                <img src="./img/email_lg.svg" width="30" height="30" alt="Medium Logo">
+            </a>
+            <a href="https://github.com/mdainton21">
+                <img src="./img/github_lg.svg" width="30" height="30" alt="Github Logo">
+            </a>
+            <a href="https://www.linkedin.com/in/matthew-dainton-dev">
+                <img src="./img/linkedin_lg.svg" width="30" height="30" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
